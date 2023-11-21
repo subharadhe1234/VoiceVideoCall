@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1D55C"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/baseline_video_call_24"
+       />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="VoiceVideoCall"
+    android:textSize="32dp"
+    android:textColor="@color/black"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="let's get start"
+    android:textSize="40dp"
+    android:layout_marginVertical="15dp"
+    android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Id"
+        android:layout_marginHorizontal="40dp"
+        android:id="@+id/User_id_edit_text"
+        android:textSize="25dp"
+        android:padding="12dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/retangal_roundad_background"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:id="@+id/start_btn"
+        android:background="@drawable/retangal_roundad_background"
+        />
+</LinearLayout>
