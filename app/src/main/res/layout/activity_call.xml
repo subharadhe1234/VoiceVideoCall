@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:text="VoiceVideoCall"
         android:textSize="32dp"
+        android:id="@+id/hay_user_text_view"
         android:textColor="@color/black"/>
     <TextView
         android:layout_width="wrap_content"
@@ -47,6 +48,7 @@
             android:layout_centerVertical="true"
             android:layout_margin="10dp"
             android:id="@+id/voice_call_button"
+            android:layout_marginHorizontal="10dp"
             android:layout_toLeftOf="@id/vedio_call_button"
             />
         <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
@@ -55,6 +57,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_margin="10dp"
+            android:layout_marginHorizontal="10dp"
             android:id="@+id/vedio_call_button"
 
             />

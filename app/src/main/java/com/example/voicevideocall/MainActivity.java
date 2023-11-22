@@ -3,6 +3,7 @@ package com.example.voicevideocall;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Application;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,11 +23,14 @@ Button startBtn;
         userIdEdit=findViewById(R.id.User_id_edit_text);
         startBtn=findViewById(R.id.start_btn);
         startBtn.setOnClickListener(v -> {
-            String UserId=userIdEdit.getText().toString().trim();
+            String UserId=userIdEdit.getText().toString();
             if (UserId.isEmpty()){
                 return;
             }
         startService(UserId);
+            Intent intent=new Intent(MainActivity.this,callActivity.class);
+            intent.putExtra("UserId",UserId);
+            startActivity(intent);
         });
     }
     void startService(String UserId){
